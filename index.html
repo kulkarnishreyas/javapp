@@ -1,30 +1,37 @@
-<div id="calculator">
-	<!-- Screen and clear key -->
-	<div class="top">
-		<span class="clear">C</span>
-		<div class="screen"></div>
-	</div>
-	
-	<div class="keys">
-		<!-- operators and other keys -->
-		<span>7</span>
-		<span>8</span>
-		<span>9</span>
-		<span class="operator">+</span>
-		<span>4</span>
-		<span>5</span>
-		<span>6</span>
-		<span class="operator">-</span>
-		<span>1</span>
-		<span>2</span>
-		<span>3</span>
-		<span class="operator">÷</span>
-		<span>0</span>
-		<span>.</span>
-		<span class="eval">=</span>
-		<span class="operator">x</span>
-	</div>
+<div class="box">
+<div class="display"><input type="text" readonly size="18" id="d"></div>
+<div class="keys">
+    <p><input type="button" class="button gray" 
+    value="mrc" onclick='c("Created....................")'>
+    <input type="button" class="button gray" 
+    value="m-" onclick='c("...............by............")'>
+    <input type="button" class="button gray" value="
+    m+" onclick='c(".....................Anoop")'>
+    <input type="button" class="button pink" 
+    value="/" onclick='v("/")'></p>
+    <p><input type="button" class="button black" 
+    value="7" onclick='v("7")'><input type="button" 
+    class="button black" value="8" onclick='v("8")'>
+    <input type="button" class="button black" value="9" 
+    onclick='v("9")'><input type="button" 
+    class="button pink" value="*" onclick='v("*")'></p>
+    <p><input type="button" class="button black" 
+    value="4" onclick='v("4")'><input type="button" 
+    class="button black" value="5" onclick='v("5")'>
+    <input type="button" class="button black" value="6" 
+    onclick='v("6")'><input type="button" 
+    class="button pink" value="-" onclick='v("-")'></p>
+    <p><input type="button" class="button black" 
+    value="1" onclick='v("1")'><input type="button" 
+    class="button black" value="2" onclick='v("2")'>
+    <input type="button" class="button black" value="3" 
+    onclick='v("3")'><input type="button" 
+    class="button pink" value="+" onclick='v("+")'></p>
+    <p><input type="button" class="button black" 
+    value="0" onclick='v("0")'><input type="button" 
+    class="button black" value="." onclick='v(".")'>
+    <input type="button" class="button black" value="C" 
+    onclick='c("")'><input type="button" 
+    class="button orange" value="=" onclick='e()'></p>
 </div>
-
-<!-- PrefixFree -->
-<script src="http://thecodeplayer.com/uploads/js/prefixfree-1.0.7.js" type="text/javascript" type="text/javascript"></script>
+</div>
